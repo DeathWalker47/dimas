@@ -1,0 +1,63 @@
+.top {
+  background-image: url('../img/top.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 340px;
+  padding-bottom: 340px;
+
+  &__container {
+    @include flex-all-sb;
+  }
+
+  &__content {
+    max-width: 490px;
+  }
+
+  &__title {
+    @extend %heist-400;
+    font-size: 80px;
+    line-height: 100px;
+    color: $accent;
+  }
+
+  &__title-name {
+    color: $white;
+  }
+
+  &__info {
+    margin-right: 150px;
+  }
+
+  &__year {
+    position: relative;
+    display: block;
+    @extend %heist-400;
+    font-size: 96px;
+    line-height: 120px;
+    color: $white;
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 195px;
+      height: 195px;
+      background-image: url('../img/circle.svg');
+      background-repeat: no-repeat;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+.subtitle {
+  display: block;
+  margin-bottom: 40px;
+  color: $white;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  @extend %lato-700;
+}

@@ -1,8 +1,53 @@
 @font-face {
-  font-family: "name";
+  font-family: "Heist";
   font-weight: 400;
   font-style: normal;
   src: local("DMSans-Regular"),
-    url("../fonts/name-400.woff2") format("woff2");
+    url("../fonts/HeistRegular.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 700;
+  font-style: normal;
+  src: local("DMSans-Regular"),
+    url("../fonts/Lato-Bold.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Marcellus";
+  font-weight: 400;
+  font-style: normal;
+  src: local("DMSans-Regular"),
+    url("../fonts/Marcellus-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Outfit";
+  font-weight: 400;
+  font-style: normal;
+  src: local("DMSans-Regular"),
+    url("../fonts/Outfit-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Outfit";
+  font-weight: 600;
+  font-style: normal;
+  src: local("DMSans-Regular"),
+    url("../fonts/Outfit-SemiBold.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-style: normal;
+  src: local("DMSans-Regular"),
+    url("../fonts/Poppins-Regular.woff2") format("woff2");
   font-display: swap;
 }

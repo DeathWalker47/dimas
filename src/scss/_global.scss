@@ -13,7 +13,10 @@ html {
   margin: 0;
   min-width: 320px;
   min-height: 100%;
-  font-size: 16px;
+  font-size: 14px;
+  line-height: 26px;
+  @extend %poppins-400;
+  background-color: $bg;
 }
 
 //Класс, для того, чтоб страница не скроллилась после открытия меню
@@ -32,14 +35,37 @@ html {
   flex-grow: 1;
 }
 
+.container-content {
+  max-width: 1830px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
 .container {
-  max-width: 1230px;
+  max-width: 1330px;
   padding: 0 15px;
   margin: 0 auto;
 }
 
 .title {
-  // color: $title;
+  color: $white;
+  font-size: 56px;
+  line-height: 70px;
+  @extend %heist-400;
+}
+
+.title-board {
+  position: relative;
+  padding-bottom: 25px;
+  &::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 126px;
+    height: 3px;
+    background-color: $accent;
+  }
 }
 
 .visually-hidden {
@@ -93,4 +119,10 @@ html {
 
 .page--ios .dis-scroll {
   position: relative;
+}
+
+.section-page {
+  position: relative;
+  min-height: 100vh;
+  overflow-y: auto;
 }

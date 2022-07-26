@@ -1,0 +1,27 @@
+.footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-bottom: 47px;
+
+  &__container-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__link {
+    color: $white;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.32em;
+    @extend %outfit-600;
+    text-transform: uppercase;
+    transition: color .3s ease-in-out;
+
+    &:hover {
+      color: $accent;
+    }
+  }
+}

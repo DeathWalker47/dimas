@@ -1,3 +1,48 @@
+$white: #fff;
+$defautl: rgba($color: #fff, $alpha: .7);
+$accent: #F21967;
+$bg:#011A2C;
+
+%heist-400 {
+  font-family: "Heist", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+%lato-700 {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+%mercel-400 {
+  font-family: "Marcellus", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+%outfit-400 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+%outfit-600 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+%poppins-400 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+
+
 
 // %burger-width{
 //   width: 30px;
