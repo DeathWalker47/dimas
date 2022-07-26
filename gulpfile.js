@@ -99,6 +99,8 @@ const imgToApp = () => {
     "./src/img/**.png",
     "./src/img/**.jpeg",
     "./src/img/**.svg",
+    
+    "./src/img/icons/**.svg",
   ]).pipe(dest("./app/img"));
 };
 
@@ -210,7 +212,8 @@ const watchFiles = () => {
   watch("./src/img/**svg", imgToApp);
   watch(`./src/img/**/**.{jpg,jpeg,png}`, webpImages);
   watch(`./src/img/**/**.{jpg,jpeg,png}`, avifImages);
-  watch("./src/img/**svg", svgSprites);
+  watch("./src/img/svg/**.svg", svgSprites);
+  // watch("./src/img/**svg", svgSprites);
   watch("./src/resources/**", resources);
   watch("./src/fonts/**", fonts);
   watch("./src/js/**/*.js", scripts);
@@ -233,7 +236,6 @@ exports.default = series(
     svgSprites
   ),
   delFonts,
-  fontDest,
   fontDest,
   styles,
   watchFiles

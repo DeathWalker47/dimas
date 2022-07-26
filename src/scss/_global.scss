@@ -15,6 +15,7 @@ html {
   min-height: 100%;
   font-size: 14px;
   line-height: 26px;
+  color: $defautl;
   @extend %poppins-400;
   background-color: $bg;
 }
