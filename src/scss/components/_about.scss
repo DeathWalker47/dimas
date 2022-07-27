@@ -1,0 +1,93 @@
+.about {
+  padding: 325px 0 325px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__descr {
+    max-width: 528px;
+    margin-right: 15px;
+  }
+
+  &__title {
+    position: relative;
+    width: 330px;
+    margin-bottom: 40px;
+
+    &::after {
+      position: absolute;
+      content: '';
+      bottom: 30px;
+      right: -15px;
+      width: 48px;
+      height: 48px;
+      background-image: url('../img/play.svg');
+    }
+  }
+}
+
+.skills {
+  max-width: 640px;
+  width: 100%;
+
+  &__item {
+    padding-left: 52px;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: auto;
+
+    &:not(:last-child) {
+      margin-bottom: 67px;
+    }
+
+  }
+
+  &__item--ph {
+    background-image: url('../img/ps.svg');
+  }
+  &__item--fig {
+    background-image: url('../img/fig.svg');
+  }
+  &__item--sk {
+    background-image: url('../img/sketch.svg');
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 11px;
+    color: $white;
+    font-size: 14px;
+    line-height: 18px;
+    @extend %outfit-600;
+    text-transform: uppercase;
+  }
+
+  &__line {
+    position: relative;
+    height: 16px;
+    padding: 4px;
+    border: 1px solid $defautl;
+
+    span {
+      display: block;
+      background-color: $accent;
+      height: 6px;
+    }
+
+    // &::before {
+    //   position: absolute;
+    //   content: '';
+    //   left: 0;
+    //   top: 50%;
+    //   transform: translateY(-50%);
+    //   width: 100%;
+    //   height: 100%;
+    //   background-color: $accent;
+    // }
+  }
+}
