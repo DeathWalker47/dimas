@@ -1,0 +1,58 @@
+.blog {
+  padding-top: 195px;
+  padding-bottom: 170px;
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__link {
+    display: inline-block;
+    padding: 15px 44px;
+    color: $white;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    background-color: $accent;
+    @extend %outfit-600;
+    transition: background-color .3s ease-in-out;
+
+    &:hover {
+      background-color: $accent-hover;
+    }
+
+  }
+}
+
+.blog-list {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 30px;
+
+  &__item {
+    grid-column: 4 span;
+  }
+
+  &__post {
+    padding: 32px 24px 34px;
+    border: 1px solid $defautl;
+  }
+  &__time {
+    display: block;
+    margin-bottom: 16px;
+    color: $accent;
+    font-size: 14px;
+    line-height: 18px;
+    @extend %outfit-600;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    margin-bottom: 16px;
+    font-size: 24px;
+    line-height: 32px;
+    @extend %outfit-600;
+  }
+
+  &__descr {}
+}
