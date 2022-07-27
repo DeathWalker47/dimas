@@ -1,0 +1,137 @@
+.contact {
+  position: relative;
+  background-image: url('../../img/contact.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 3;
+
+  &::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba($color: #000000, $alpha: .73);
+    z-index: -1;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 304px 0 280px;
+  }
+
+  &__info {
+    max-width: 330px;
+    margin-right: 15px;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    color: $white;
+    font-size: 24px;
+    line-height: 30px;
+    @extend %outfit-400;
+    transition: color .3s ease-in-out;
+
+    svg {
+      width: 32px;
+      height: 32px;
+      margin-right: 24px;
+      object-fit: cover;
+      stroke: currentColor;
+    }
+    &:hover {
+      color: $accent;
+    }
+  }
+
+  &__link--tel {
+    margin-bottom: 32px;
+    svg {
+      fill: currentColor;
+    }
+  }
+
+  &__link--mess {
+    margin-bottom: 54px;
+  }
+
+  .social__link {
+    width: 32px;
+    height: 32px;
+  }
+
+  &__form {
+    max-width: 640px;
+  }
+
+  &__form-box {
+    display: flex;
+    margin-bottom: 32px;
+
+    input {
+      width: 304px;
+
+      &:not(:last-child) {
+        margin-right: 32px;
+      }
+    }
+  }
+
+  &__form-input {
+    width: 100%;
+  }
+
+  &__form-textarea {
+    resize: none;
+    width: 100%;
+    height: 113px;
+    margin-top: 32px;
+    margin-bottom: 54px;
+  }
+
+  &__form-btn {}
+}
+
+.form {
+  &__input {
+    padding-bottom: 17px;
+    margin-right: 15px;
+    border-bottom: 1px solid $white;
+    font-size: 14px;
+    line-height: 26px;
+    color: $white;
+
+    &::placeholder {
+      @extend %poppins-400;
+      font-size: 14px;
+      line-height: 26px;
+      color: $white;
+    }
+  }
+
+  &__btn {
+    display: inline-block;
+    color: $white;
+    background-color: $accent;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    @extend %outfit-600;
+    padding: 15px 28px;
+    transition: background-color .3s ease-in-out;
+
+    &:hover {
+      background-color: $accent-hover;
+    }
+  }
+}
