@@ -33,10 +33,88 @@
     grid-column: 4 span;
   }
 
-  &__post {
+  &__post {}
+
+  &__post-link {
+    position: relative;
+    display: block;
+    overflow: hidden;
     padding: 32px 24px 34px;
     border: 1px solid $defautl;
+
+    transition: border-color .3s ease-in-out;
+
+    &--one::before {
+      background-image: url('../../img/blog-1.jpg');
+    }
+    &--two::before {
+      background-image: url('../../img/blog-2.jpg');
+    }
+    &--three::before {
+      background-image: url('../../img/blog-3.jpg');
+    }
+    &--foure::before {
+      background-image: url('../../img/blog-4.jpg');
+    }
+    &--five::before {
+      background-image: url('../../img/test.jpg');
+    }
+
+    &::before {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      opacity: 0;
+      overflow: hidden;
+      visibility: hidden;
+      transition: opacity .6s ease-in-out, overflow .6s ease-in-out, visibility .6s ease-in-out;
+
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      top: 50%;
+      left: 50%;
+      width: 80px;
+      height: 80px;
+      transform: translate(-50%, -50%);
+      background-image: url('../../img/button.svg');
+      z-index: 1;
+
+      opacity: 0;
+      overflow: hidden;
+      visibility: hidden;
+      transition: opacity .6s ease-in-out, overflow .6s ease-in-out, visibility .6s ease-in-out;
+    }
+
+    &:hover {
+
+      border-color: transparent;
+
+      &::before {
+        opacity: 1;
+        visibility: visible;
+        overflow: visible;
+      }
+
+      &::after {
+        opacity: 1;
+        visibility: visible;
+        overflow: visible;
+        transition: opacity .6s ease-in-out, overflow .6s ease-in-out, visibility .6s ease-in-out;
+      }
+    }
   }
+
   &__time {
     display: block;
     margin-bottom: 16px;
