@@ -1,0 +1,95 @@
+.testimonials {
+  position: relative;
+  padding: 244px 0 290px;
+  background-image: url('../img/test.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__container {
+    @include flex;
+    justify-content: space-between;
+  }
+
+  &__left {
+    max-width: 530px;
+    margin-right: 15px;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__descr {
+    margin-bottom: 48px;
+  }
+
+  &__clients {
+    position: relative;
+    max-width: 260px;
+    @extend %mercel-400;
+    color: $white;
+  }
+
+  &__number {
+    font-size: 120px;
+    line-height: 150px;
+  }
+
+  &__happy {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: $accent;
+  }
+}
+
+.tabs {
+  max-width: 640px;
+
+  &__content {
+    margin-bottom: 48px;
+  }
+
+  &__text {
+    margin-bottom: 40px;
+    @extend %outfit-400;
+    font-size: 32px;
+    line-height: 48px;
+    color: $white;
+  }
+
+  &__post {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+  }
+
+  &__nav {
+    align-items: center;
+  }
+
+  &__nav-item {
+    &:not(:last-child) {
+      margin-right: 44px;
+    }
+  }
+
+  &__nav-btn {
+    width: 48px;
+    height: 64px;
+    overflow: hidden;
+    border-radius: 36px;
+
+    &--active {
+      outline: 1px solid $accent;
+      outline-offset: 2px;
+      width: 72px;
+      height: 96px;
+    }
+  }
+}

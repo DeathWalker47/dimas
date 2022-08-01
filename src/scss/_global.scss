@@ -128,3 +128,18 @@ html {
   min-height: 100vh;
   overflow-y: auto;
 }
+
+.page-overlay {
+  position: relative;
+  z-index: 3;
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.73);
+    z-index: -1;
+  }
+}
