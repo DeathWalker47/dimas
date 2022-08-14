@@ -1,0 +1,35 @@
+.project {
+  
+}
+
+.project-list {
+  column-count: 2;
+
+  &__item {
+    margin-bottom: 60px;
+  }
+
+  &__subtitle {
+    display: block;
+    margin-bottom: 16px;
+    @extend %lato-700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.32em;
+  }
+
+  &__title {
+    @extend %heist-400;
+    font-size: 56px;
+    line-height: 70px;
+  }
+
+  &__link {
+    display: block;
+    text-transform: uppercase;
+    color: $white;
+    opacity: 0.3;
+
+    transition: opacity .3s ease-in-out;
+  }
+}
