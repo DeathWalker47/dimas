@@ -13,17 +13,39 @@
   column-gap: 30px;
   padding-top: 232px;
   padding-bottom: 200px;
+  list-style-type: none;
+
+  counter-reset: counter;
 
   &__item {
+    position: relative;
     margin-bottom: 60px;
+    padding-left: 60px;
 
-    &--active>.project-list__link {
-      opacity: 1;
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: '0'counter(counter);
+      counter-increment: counter;
+      @extend %outfit-600;
+      font-size: 16px;
+      line-height: 20px;
+      color: $white;
+      opacity: 0.3;
     }
 
-    // &:hover .project-list__link {
-    //   opacity: 1;
-    // }
+    &--active {
+      .project-list__link {
+        opacity: 1;
+      }
+
+      &::before {
+        opacity: 1;
+      }
+    }
+
+
   }
 
   &__subtitle {
