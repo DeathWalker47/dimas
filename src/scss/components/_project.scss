@@ -1,12 +1,29 @@
 .project {
-  
+  // background-image: url('../img/proj-1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  transition: all .3s ease-in-out;
 }
 
 .project-list {
-  column-count: 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
+  padding-top: 232px;
+  padding-bottom: 200px;
 
   &__item {
     margin-bottom: 60px;
+
+    &--active>.project-list__link {
+      opacity: 1;
+    }
+
+    // &:hover .project-list__link {
+    //   opacity: 1;
+    // }
   }
 
   &__subtitle {
