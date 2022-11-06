@@ -1,0 +1,48 @@
+.proj {
+  &__content {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  &__content-image {
+    grid-column: 8 span;
+  }
+  &__content-img {
+    height: 100%;
+  }
+  &__content-descr {
+    grid-column: 4 span;
+  }
+}
+
+.proj-descr {
+  padding: 160px 96px 130px;
+  &__title {
+    margin-bottom: 50px;
+  }
+  &__text {
+    @extend %poppins-400;
+    margin-bottom: 65px;
+  }
+  &__list {
+
+  }
+  &__list-item {
+    &:not(:last-child) {
+      border-bottom: 1px solid rgba($color: $white, $alpha: .2);
+      padding-bottom: 24px;
+      margin-bottom: 24px;
+    }
+  }
+  &__list-title {
+    @extend %outfit-600;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    color: $white;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  &__list-text {
+
+  }
+}

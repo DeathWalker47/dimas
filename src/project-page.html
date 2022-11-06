@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.min.css">
+  <link href="./favicon.svg" rel="icon" type="image/svg">
+  <title>Project details</title>
+  <script defer src="js/main.js"></script>
+</head>
+<body class="page__body">
+  <div class="wrapper">
+    @include('parts/header.html')
+    <main class="main project-page" >
+      <div class="proj section-page">
+        <div class="proj__content">
+          <div class="proj__content-image">
+            <picture>
+              <source srcset="./img/project-1.avif" type="image/avif">
+              <source srcset="./img/project-1.webp" type="image/webp">
+              <img loading="lazy" src="./img/project-1.jpg" class="proj__content-img"  alt="img">
+            </picture>
+          </div>
+          <div class="proj__content-descr proj-descr proj-container ">
+            <h2 class="proj-descr__title title">
+              Renex Museum
+            </h2>
+            <p class="proj-descr__text">
+              Donec a iaculis odio. Mauris tincidunt, ligula ut congue tempor, augue nibh condimentum ipsum, ullamcorper congue felis nibh egestas risus. Aliquam sed pretium dui, in malesuada velit. Pellentesque at enim placerat risus.
+            </p>
+
+            <ul class=" list-reset proj-descr__list">
+              <li class=" proj-descr__list-item">
+                <h3 class="proj-descr__list-title">
+                  Services
+                </h3>
+                <p class="proj-descr__list-text">
+                  Design, Branding, Artwork
+                </p>
+              </li>
+              <li class="proj-descr__list-item">
+                <h3 class="proj-descr__list-title">
+                  Manager
+                </h3>
+                <p class="proj-descr__list-text">
+                  John Doe
+                </p>
+              </li>
+              <li class="proj-descr__list-item">
+                <h3 class="proj-descr__list-title">
+                  Date
+                </h3>
+                <p class="proj-descr__list-text">
+                  January 23, 2022
+                </p>
+              </li>
+              <li class="proj-descr__list-item">
+                <h3 class="proj-descr__list-title">
+                  Client
+                </h3>
+                <p class="proj-descr__list-text">
+                  ABC Group
+                </p>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </main>
+    @include('parts/footer.html')
+  </div>
+</body>
+</html>

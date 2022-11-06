@@ -99,7 +99,7 @@ const imgToApp = () => {
     "./src/img/**.png",
     "./src/img/**.jpeg",
     "./src/img/**.svg",
-    
+
     "./src/img/icons/**.svg",
   ]).pipe(dest("./app/img"));
 };

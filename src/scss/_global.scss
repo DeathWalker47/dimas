@@ -125,8 +125,10 @@ html {
 
 .section-page {
   position: relative;
-  min-height: 100vh;
-  overflow-y: auto;
+  // min-height: 100vh;
+  // overflow-y: auto;
+
+  height: 100vh;
 }
 
 .page-overlay {
