@@ -1,2 +1,5 @@
 import GraphTabs from 'graph-tabs';
-const tabs = new GraphTabs('tabs');
+
+if(document.querySelector('.tabs')) {
+  const tabs = new GraphTabs('tabs');
+}
