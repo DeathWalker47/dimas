@@ -1,4 +1,9 @@
+.project-page {
+  z-index: 3;
+}
+
 .proj {
+  background-color: $bg;
   &__content {
     height: 100vh;
     display: grid;
@@ -196,5 +201,79 @@
   }
   &__descr {
 
+  }
+}
+
+
+
+.swiper-page {
+
+  &__paginations {
+    position: absolute;
+    width: 66%;
+    height: 100vh;
+  }
+  &__prev,
+  &__next {
+    width: 64px;
+    height: 64px;
+    fill: transparent;
+    color: $white;
+    stroke: currentColor;
+    transition: color .3s ease-in-out;
+
+     svg {
+      stroke-width: 2px;
+      width: 32px;
+      height: 32px;
+      object-fit: cover;
+     }
+    &:hover {
+      color: $accent;
+    }
+    &::after {
+      display: none;
+    }
+  }
+  &__prev {
+    left: 24px;
+  }
+
+  &__next {
+    right: 24px;
+  }
+
+  &__pagination {
+    z-index: 3;
+  }
+
+  .swiper-pagination-bullet {
+    position: relative;
+    display: inline-block;
+    bottom: 40px;
+    width: 4px;
+    height: 4px;
+    background-color: $white;
+    opacity: 1;
+    margin: 0 22px!important;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      border: 2px solid transparent;
+    }
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: $accent;
+    &::before {
+      border: 2px solid $accent;
+    }
   }
 }

@@ -6,3 +6,5 @@ import './components/_active-menu';
 import './components/_fullpage';
 import './components/_popup-video';
 import './components/_tooltip';
+import './components/_page-slider';
+
