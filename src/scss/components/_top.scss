@@ -3,8 +3,12 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 340px;
-  padding-bottom: 340px;
+  // padding-top: 340px;
+  // padding-bottom: 340px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   &__container {
     @include flex-all-sb;

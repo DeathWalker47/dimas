@@ -13,13 +13,48 @@
   <div class="wrapper">
     @include('parts/header.html')
     <main class="main home-page" >
-      @include('parts/top.html')
+
+      <div class="swiper home-swiper">
+        <div class="swiper-wrapper">
+
+           <div class="swiper-slide">
+            @include('parts/top.html')
+           </div>
+
+           <div class="swiper-slide">
+            @include('parts/about.html')
+           </div>
+
+           <div class="swiper-slide">
+            @include('parts/project.html')
+           </div>
+
+           <div class="swiper-slide">
+            @include('parts/services.html')
+           </div>
+
+           <div class="swiper-slide">
+            @include('parts/testimonials.html')
+           </div>
+
+           <div class="swiper-slide">
+            @include('parts/blog.html')
+           </div>
+
+           <div class="swiper-slide">
+            @include('parts/contact.html')
+           </div>
+        </div>
+        <div class="swiper-pagination home-swiper__pagination"></div>
+      </div>
+
+      <!-- @include('parts/top.html')
       @include('parts/about.html')
       @include('parts/project.html')
       @include('parts/services.html')
       @include('parts/testimonials.html')
       @include('parts/blog.html')
-      @include('parts/contact.html')
+      @include('parts/contact.html') -->
     </main>
     @include('parts/footer.html')
   </div>

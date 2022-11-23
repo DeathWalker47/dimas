@@ -44,6 +44,7 @@ html {
 
 .container {
   max-width: 1330px;
+  width: 100%;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -128,7 +129,13 @@ html {
   // min-height: 100vh;
   // overflow-y: auto;
   overflow-y: auto;
-  height: 100vh;
+  // height: 100%;
+  // max-height: 100vh;
+
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .page-overlay {
@@ -143,5 +150,26 @@ html {
     bottom: 0;
     background-color: rgba(0,0,0,.73);
     z-index: -1;
+  }
+}
+
+.home-swiper  {
+  height: 100vh;
+  .swiper-pagination {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .swiper-pagination-bullet {
+    bottom: 0;
+    right: 2%;
+    margin: 0 0 36px 0!important;
+    &:last-child {
+      margin: 0!important;
+    }
   }
 }

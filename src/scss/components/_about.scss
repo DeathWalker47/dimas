@@ -1,5 +1,5 @@
 .about {
-  padding: 325px 0 325px;
+  // padding: 325px 0 325px;
 
   &__container {
     display: flex;
@@ -69,7 +69,7 @@
 
   &__line {
     position: relative;
-    height: 16px;
+    height: 6px;
     padding: 4px;
     border: 1px solid $defautl;
 
