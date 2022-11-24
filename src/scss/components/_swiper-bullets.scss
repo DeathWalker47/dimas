@@ -27,3 +27,26 @@
     border: 2px solid $accent;
   }
 }
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: 64px;
+  height: 64px;
+  fill: transparent;
+  color: $white;
+  stroke: currentColor;
+  transition: color .3s ease-in-out;
+
+   svg {
+    stroke-width: 2px;
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+   }
+  &:hover {
+    color: $accent;
+  }
+  &::after {
+    display: none;
+  }
+}

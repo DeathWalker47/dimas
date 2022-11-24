@@ -6,31 +6,31 @@ Swiper.use([Navigation, Pagination, EffectCreative, Mousewheel]);
 
 const swiperHome = new Swiper('.home-swiper', {
   speed: 1000,
-  // navigation: {
-  //   nextEl: '.swiper-page__next',
-  //   prevEl: '.swiper-page__prev',
-  // },
+  navigation: {
+    nextEl: '.home-swiper__next',
+    prevEl: '.home-swiper__prev',
+  },
   mousewheel: {
     invert: false,
   },
   // slidesPerView: 1,
-  // direction: "vertical",
+  direction: "vertical",
   pagination: {
     el: '.home-swiper__pagination',
     type: 'bullets',
     clickable: true,
   },
   // grabCursor: true,
-  //   effect: "creative",
-  //   creativeEffect: {
-  //     prev: {
-  //       // shadow: true,
-  //       translate: ["-20%", 0, -1],
-  //     },
-  //     next: {
-  //       translate: ["100%", 0, 0],
-  //     },
-  //   },
+    effect: "creative",
+    creativeEffect: {
+      prev: {
+        // shadow: true,
+        translate: [0, "-100%", 0],
+      },
+      next: {
+        translate: [0, "20%", -1],
+      },
+    },
 });
 
 const swiper = new Swiper('.swiper-page', {

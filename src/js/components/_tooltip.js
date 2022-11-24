@@ -1,6 +1,8 @@
 // Подключение плагина для позиционирования тултипов
+
 import { createPopper, right} from '@popperjs/core';
 
+if(document.querySelector('.tooltip')) {
 const elOne = document.querySelector('.tooltip__btn--1');
 const tooltipOne = document.querySelector('.tooltip__txt--1');
 createPopper(elOne, tooltipOne, {
@@ -18,3 +20,6 @@ const tooltipThree = document.querySelector('.tooltip__txt--3');
 createPopper(elThree, tooltipThree, {
   placement: 'right'
 });
+
+}
+

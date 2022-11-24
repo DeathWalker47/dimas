@@ -126,6 +126,7 @@ html {
 
 .section-page {
   position: relative;
+  background-color: $bg;
   // min-height: 100vh;
   // overflow-y: auto;
   overflow-y: auto;
@@ -161,6 +162,7 @@ html {
     justify-content: center;
     align-items: flex-end;
     top: 50%;
+    right: 64px;
     transform: translateY(-50%);
   }
 
@@ -171,5 +173,18 @@ html {
     &:last-child {
       margin: 0!important;
     }
+  }
+  &__next {
+    transform: rotate(90deg);
+    right: 33px;
+    left: auto;
+    top: 67%;
+  }
+
+  &__prev {
+    transform: rotate(90deg);
+    right: 33px;
+    left: auto;
+    top: 31%;
   }
 }
