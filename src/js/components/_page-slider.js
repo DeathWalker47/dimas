@@ -1,7 +1,7 @@
-import Swiper, { Navigation, Pagination, EffectCreative, Mousewheel } from 'swiper';
+import Swiper, { Navigation, Pagination, EffectCreative, Mousewheel, HashNavigation } from 'swiper';
 
 
-Swiper.use([Navigation, Pagination, EffectCreative, Mousewheel]);
+Swiper.use([Navigation, Pagination, EffectCreative, Mousewheel, HashNavigation]);
 
 
 const swiperHome = new Swiper('.home-swiper', {
@@ -25,11 +25,15 @@ const swiperHome = new Swiper('.home-swiper', {
     creativeEffect: {
       prev: {
         // shadow: true,
-        translate: [0, "-100%", 0],
+        translate: [-1, "-100%", 0],
       },
       next: {
-        translate: [0, "20%", -1],
+        translate: [0, "10%", -1],
       },
+    },
+    hashNavigation: {
+      replaceState:false,
+      watchState: true,
     },
 });
 
