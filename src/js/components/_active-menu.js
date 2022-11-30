@@ -1,42 +1,10 @@
-const home = document.querySelector('.home-page');
+const main = document.querySelector('.main')
 
-if(home) {
-
-  window.addEventListener("scroll", () => {
-    let scrollDistance = window.scrollY;
-
-    document.querySelectorAll(".swiper-slide").forEach((el, i) => {
-      if (el.offsetTop <= scrollDistance) {
-        document.querySelectorAll(".nav a").forEach((el) => {
-          if (el.classList.contains("nav__link--active")) {
-            el.classList.remove("nav__link--active");
-          }
-        });
-
-        document
-          .querySelectorAll(".nav li")
-          [i].querySelector("a")
-          .classList.add("nav__link--active");
-      }
-    });
-  });
-  // window.addEventListener("scroll", () => {
-  //   let scrollDistance = window.scrollY;
-
-  //   document.querySelectorAll(".section-page").forEach((el, i) => {
-  //     if (el.offsetTop <= scrollDistance) {
-  //       document.querySelectorAll(".nav a").forEach((el) => {
-  //         if (el.classList.contains("nav__link--active")) {
-  //           el.classList.remove("nav__link--active");
-  //         }
-  //       });
-
-  //       document
-  //         .querySelectorAll(".nav li")
-  //         [i].querySelector("a")
-  //         .classList.add("nav__link--active");
-  //     }
-  //   });
-  // });
+if(main.dataset) {
+const navSliderListLink = document.querySelectorAll('.nav__link');
+  navSliderListLink.forEach(el => {
+    if(el.dataset.text === main.dataset.descr) {
+      el.classList.add('nav__link--active')
+    }
+  })
 }
-

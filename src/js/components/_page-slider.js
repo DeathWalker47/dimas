@@ -1,8 +1,17 @@
-import Swiper, { Navigation, Pagination, EffectCreative, Mousewheel, HashNavigation } from 'swiper';
+// import Swiper, { Navigation, Pagination, EffectCreative, Mousewheel, HashNavigation, Thumb } from 'swiper';
+// Swiper.use([Navigation, Pagination, EffectCreative, Mousewheel, HashNavigation, Thumb]);
+
+import Swiper from 'swiper/bundle';
 
 
-Swiper.use([Navigation, Pagination, EffectCreative, Mousewheel, HashNavigation]);
+const swiperNav = new Swiper('.nav-swiper', {
+  slidesPerView: 7,
+  direction: "horizontal",
+  slideToClickedSlide:true,
+  watchSlidesProgress: true,
 
+  hashNavigation: true,
+});
 
 const swiperHome = new Swiper('.home-swiper', {
   speed: 1000,
@@ -13,29 +22,28 @@ const swiperHome = new Swiper('.home-swiper', {
   mousewheel: {
     invert: false,
   },
-  // slidesPerView: 1,
+  slidesPerView: 1,
   direction: "vertical",
   pagination: {
     el: '.home-swiper__pagination',
     type: 'bullets',
     clickable: true,
   },
-  // grabCursor: true,
     effect: "creative",
     creativeEffect: {
       prev: {
-        // shadow: true,
         translate: [-1, "-100%", 0],
       },
       next: {
         translate: [0, "10%", -1],
       },
     },
-    hashNavigation: {
-      replaceState:false,
-      watchState: true,
+
+    thumbs: { // указываем на превью слайдер
+      swiper: swiperNav // указываем имя превью слайдера
     },
 });
+
 
 const swiper = new Swiper('.swiper-page', {
   speed: 1000,
@@ -63,3 +71,6 @@ const swiper = new Swiper('.swiper-page', {
       },
     },
 });
+
+
+
