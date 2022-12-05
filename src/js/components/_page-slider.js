@@ -42,7 +42,7 @@ const swiperHome = new Swiper('.home-swiper', {
     thumbs: { // указываем на превью слайдер
       swiper: swiperNav // указываем имя превью слайдера
     },
-});
+    });
 
 
 const swiper = new Swiper('.swiper-page', {
