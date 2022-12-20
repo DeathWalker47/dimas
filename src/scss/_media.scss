@@ -1,23 +1,166 @@
 @media (max-width: 1400px) {
-  
+  .about__container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.about__descr {
+  max-width: 528px;
+  margin-bottom: 30px;
+  margin-right: 0;
+}
+
+.title-board {
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.about__title {
+  margin-bottom: 15px;
+}
 }
 
 @media (max-width: 1200px) {
-  
+
 }
 
 @media (max-width: 1024px) {
-  
+
 }
 
 @media (max-width: 992px) {
-  
+  .top__content {
+    max-width: 400px;
+    width: 100%;
+  }
+  .top__title {
+    font-size: 55px;
+    line-height: 65px;
+    color: #f21967;
+}
+  .top__year::before {
+    width: 120px;
+    height: 120px;
+  }
+  .top__year {
+    font-size: 55px;
+  }
+
+  .skills__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+
+  .home-swiper .swiper-pagination {
+    right: 35px;
+  }
 }
 
 @media (max-width: 768px) {
-  
+
+  .title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .about__title::after {
+    display: none;
+  }
+
+  .about__container {
+    align-items: center;
+  }
+
+  .about__descr {
+    max-width: 400px;
+    margin-bottom: 30px;
+    margin-right: 0;
+}
+
+  .skills {
+    max-width: 400px;
+    width: 100%;
+  }
 }
 
 @media (max-width: 576px) {
-  
+  .top__info {
+    display: none;
+  }
+
+  .home-swiper__prev,
+  .home-swiper__next {
+    right: 10px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .subtitle {
+    margin-bottom: 10px;
+  }
+
+  .swiper-button-next svg, .swiper-button-prev svg {
+    width: 25px;
+    height: 25px;
+  }
+
+  .about__container {
+    align-items: flex-start;
+  }
+
+  .title {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  .about__descr {
+    max-width: 350px;
+  }
+
+  .skills {
+    max-width: 350px;
+  }
+
+  .skills__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .footer {
+    padding-bottom: 35px;
+  }
+
+  .footer__container-content {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+  }
+
+  .footer__link:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 420px) {
+  .top__title-name {
+    display: block;
+  }
+  .top__content {
+    max-width: 300px;
+  }
+  .top__title {
+    font-size: 35px;
+    line-height: 45px;
+    color: #f21967;
+  }
+
+  .skills__item {
+    padding-left: 42px;
+  }
+  // .skills__item {
+  //   padding-left: 0;
+  //   background-image: none;
+  // }
+
+  // .about__descr, .skills {
+  //   max-width: 300px;
+  //   }
 }

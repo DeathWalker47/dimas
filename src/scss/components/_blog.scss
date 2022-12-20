@@ -45,23 +45,23 @@
     transition: border-color .3s ease-in-out;
 
     &--one::before {
-      background-image: url('../../img/blog-1.jpg');
+      background-image: url('../img/blog-1.jpg');
     }
 
     &--two::before {
-      background-image: url('../../img/blog-2.jpg');
+      background-image: url('../img/blog-2.jpg');
     }
 
     &--three::before {
-      background-image: url('../../img/blog-3.jpg');
+      background-image: url('../img/blog-3.jpg');
     }
 
     &--foure::before {
-      background-image: url('../../img/blog-4.jpg');
+      background-image: url('../img/blog-4.jpg');
     }
 
     &--five::before {
-      background-image: url('../../img/test.jpg');
+      background-image: url('../img/test.jpg');
     }
 
     &::before {
@@ -75,12 +75,11 @@
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
-
       opacity: 0;
       overflow: hidden;
       visibility: hidden;
       transition: opacity .6s ease-in-out, overflow .6s ease-in-out, visibility .6s ease-in-out;
-
+      background-color: rgba(0,0,0,.8);
     }
 
     &::after {
@@ -91,9 +90,8 @@
       width: 80px;
       height: 80px;
       transform: translate(-50%, -50%);
-      background-image: url('../../img/button.svg');
+      background-image: url('../img/button.svg');
       z-index: 1;
-
       opacity: 0;
       overflow: hidden;
       visibility: hidden;
