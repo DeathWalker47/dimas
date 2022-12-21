@@ -36,6 +36,7 @@
       margin-right: 24px;
       object-fit: cover;
       stroke: currentColor;
+      fill: transparent;
     }
 
     &:hover {
@@ -70,6 +71,7 @@
 
     input {
       width: 304px;
+      margin-right: 0px;
 
       &:not(:last-child) {
         margin-right: 32px;

@@ -28,6 +28,7 @@ html {
 .wrapper {
   display: flex;
   flex-direction: column;
+  max-width: 1920px;
   overflow: hidden;
   min-height: 100%;
 }
@@ -44,7 +45,6 @@ html {
 
 .container {
   max-width: 1330px;
-  width: 100%;
   padding: 0 15px;
   margin: 0 auto;
 }
