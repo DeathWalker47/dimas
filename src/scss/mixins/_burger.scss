@@ -15,8 +15,10 @@
   position: relative;
   border: none;
   padding: 0;
-  @extend %burger-width;
-  @extend %burger-height;
+  // @extend %burger-width;
+  width: $burger-width;
+  height: $burger-height;
+  // @extend %burger-height;
   background-color: transparent;
   cursor: pointer;
 
@@ -27,7 +29,8 @@
     left: 0;
     width: 100%;
     background-color: currentColor;
-    @extend %burger-line-height;
+    // @extend %burger-line-height;
+    height: $burger-line-height;
     transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
   }
 
@@ -44,7 +47,9 @@
     left: 0;
     top: 50%;
     width: 100%;
-    @extend %burger-line-height;
+    // @extend %burger-line-height;
+    height: $burger-line-height;
+
     background-color: currentColor;
     transform: translateY(-50%);
     transition: transform 0.3s ease-in-out;

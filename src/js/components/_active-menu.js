@@ -8,3 +8,9 @@ const navSliderListLink = document.querySelectorAll('.nav__link');
     }
   })
 }
+
+const burder = document.querySelector('.burger');
+
+burder.addEventListener('click', ()=> {
+  burder.classList.toggle('burger--active');
+})

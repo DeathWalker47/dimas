@@ -20,6 +20,35 @@
 .title-board {
   margin-bottom: 15px;
   }
+
+
+  .home-swiper .swiper-pagination {
+    flex-direction: row;
+    top: 13%;
+    right: 74px;
+    transform: translateY(0%);
+  }
+
+  .home-swiper .swiper-pagination-bullet {
+    right: 0;
+    margin: 0 20px 0!important;
+  }
+
+  .home-swiper .swiper-pagination-bullet:last-child {
+    margin: 0 20px 0!important;
+  }
+
+  .home-swiper__next {
+    transform: rotate(0deg);
+    right: 30px;
+    top: 12.5%;
+  }
+
+  .home-swiper__prev {
+    transform: rotate(0deg);
+    right: 360px;
+    top: 12.5%;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -65,6 +94,7 @@
     grid-column: 6 span;
   }
 
+
 }
 
 @media (max-width: 1024px) {
@@ -92,9 +122,48 @@
     font-size: 12px;
     line-height: 14px;
   }
+
+  .blog-list__post-link {
+    padding: 15px 12px 15px;
+  }
+
+  .blog-list {
+    gap: 20px;
+  }
+
+  .blog-list__time {
+    margin-bottom: 5px;
+  }
+
+  .blog-list__title {
+    margin-bottom: 5px;
+  }
 }
 
 @media (max-width: 992px) {
+  .header {
+    padding:  15px 0;
+  }
+  .burger {
+    @include burder;
+    display: block;
+  }
+
+  .header__container {
+    width: auto;
+    order: 1;
+    padding: 0;
+    margin: 0 0 0 auto;
+  }
+
+  .social {
+    margin-left: 25px;
+  }
+
+  .nav__list {
+    display: none;
+  }
+
   .top__content {
     max-width: 400px;
     width: 100%;
@@ -150,6 +219,18 @@
   .contact__form-textarea {
     margin-top: 25px;
     margin-bottom: 30px;
+  }
+
+  .home-swiper .swiper-pagination {
+    display: none;
+  }
+
+  .home-swiper__next {
+    right: 0px;
+  }
+
+  .home-swiper__prev {
+    right: 50px;
   }
 
 }
@@ -223,6 +304,10 @@
 }
 
 @media (max-width: 576px) {
+  .nav-swiper {
+    padding: 15px 0;
+  }
+
   .top__container {
     flex-direction: column-reverse;
     align-items: self-start;
@@ -235,7 +320,6 @@
 
   .home-swiper__prev,
   .home-swiper__next {
-    right: 10px;
     width: 40px;
     height: 40px;
   }
@@ -374,20 +458,16 @@
   }
 
   .blog-list__time {
-    margin-bottom: 10px;
     font-size: 12px;
     line-height: 15px;
   }
 
   .blog-list__title {
-    margin-bottom: 10px;
     font-size: 18px;
     line-height: 24px;
   }
 
-  .blog-list__post-link {
-    padding: 15px 12px 15px;
-  }
+
 
   .blog__title {
     margin-bottom: 20px;
