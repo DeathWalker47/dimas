@@ -1,5 +1,4 @@
 .project {
-  // background-image: url('../img/proj-1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -11,8 +10,6 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 30px;
-  // padding-top: 232px;
-  // padding-bottom: 200px;
   list-style-type: none;
 
   counter-reset: counter;
@@ -44,8 +41,6 @@
         opacity: 1;
       }
     }
-
-
   }
 
   &__subtitle {

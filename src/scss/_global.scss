@@ -60,6 +60,7 @@ html {
 .title-board {
   position: relative;
   padding-bottom: 23px;
+
   &::before {
     position: absolute;
     content: '';
@@ -143,6 +144,7 @@ html {
 .page-overlay {
   position: relative;
   z-index: 3;
+
   &::before {
     position: absolute;
     content: "";
@@ -150,13 +152,14 @@ html {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,.73);
+    background-color: rgba(0, 0, 0, .73);
     z-index: -1;
   }
 }
 
-.home-swiper  {
+.home-swiper {
   height: 100vh;
+
   .swiper-pagination {
     display: flex;
     flex-direction: column;
@@ -170,11 +173,13 @@ html {
   .swiper-pagination-bullet {
     bottom: 0;
     right: 2%;
-    margin: 0 0 36px 0!important;
+    margin: 0 0 36px 0 !important;
+
     &:last-child {
-      margin: 0!important;
+      margin: 0 !important;
     }
   }
+
   &__next {
     transform: rotate(90deg);
     right: 33px;
