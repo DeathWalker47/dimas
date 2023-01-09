@@ -45,7 +45,7 @@ const swiperHome = new Swiper('.home-swiper', {
     });
 
 
-const swiper = new Swiper('.swiper-page', {
+const swiperPage = new Swiper('.swiper-page', {
   speed: 1000,
   navigation: {
     nextEl: '.swiper-page__next',

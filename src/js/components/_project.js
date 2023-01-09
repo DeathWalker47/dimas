@@ -9,7 +9,7 @@ listItem.forEach((el) => {
     // console.log(self.dataset.src);
     project.setAttribute(
       "style",
-      `background-image: url(../img/proj-${self.dataset.src}.jpg)`
+      `background-image: url(./img/proj-${self.dataset.src}.jpg)`
     );
 
     // console.log(project.getAttribute('style'));
