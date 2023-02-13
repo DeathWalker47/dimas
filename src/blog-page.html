@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.min.css">
+  <link href="./favicon.svg" rel="icon" type="image/svg">
+  <title>Blog</title>
+  <script defer src="js/main.js"></script>
+</head>
+<body class="page__body">
+  <article class="wrapper">
+    @include('parts/header-page.html')
+    <main class="main blog-page" data-descr="project">
+      <h1 class="blog-title visually-hidden">Blog</h1>
+    <div class="blog-page__top" style="background-image: url('../img/project-1.jpg');">
+
+    </div>
+
+    <article class="post">
+      <div class="blog-content ">
+        <div class="blog-container blog-content__container">
+          <time datatime="2021-01-23">Jan 23, 2021</time>
+          <h2 class="title">Have You Heard? Agency Is Your Best Bet To Grow</h2>
+          <p>Donec a iaculis odio. Mauris tincidunt, ligula ut congue tempor, augue nibh condimentum ipsum, ullamcorper congue felis nibh egestas risus. Aliquam sed pretium dui, in malesuada velit. Pellentesque at enim placerat risus cursus rutrum id vel massa. Proin ornare viverra odio, fringilla malesuada sapien congue at. Praesent ultrices feugiat ex, sodales tristique mauris maximus in. Curabitur finibus iaculis urna ac elementum. Ut at interdum magna.</p>
+          <p>Cras vel hendrerit nisl. In magna quam, sodales eget vestibulum accumsan, gravida ac velit. Quisque accumsan pretium orci, quis facilisis ex elementum sed. Curabitur porta scelerisque tincidunt. Nunc velit magna, condimentum in metus sed, rutrum ultricies nunc. Nulla pretium imperdiet dolor sit amet imperdiet. Maecenas accumsan fringilla lectus id tempor. Phasellus a convallis sapien. Suspendisse scelerisque, urna vitae aliquam tristique, mauris tortor blandit ex, eu efficitur ex sapien a sem. Praesent ut vehicula mauris. Proin fringilla ornare sagittis.</p>
+        </div>
+        <div class="blog-content__images">
+          <div class="blog-content__img">
+            <img src="./img/blog-img-1.jpg" alt="image">
+          </div>
+          <div class="blog-content__img">
+            <img src="./img/blog-img-2.jpg" alt="image">
+          </div>
+          <div class="blog-content__img">
+            <img src="./img/blog-img-3.jpg" alt="image">
+          </div>
+        </div>
+        <div class="blog-container">
+          <h3 class="blog-content__subtitle">Defaulting to Mindfulness</h3>
+          <p>Donec a iaculis odio. Mauris tincidunt, ligula ut congue tempor, augue nibh condimentum ipsum, ullamcorper congue felis nibh egestas risus. Aliquam sed pretium dui, in malesuada velit. Pellentesque at enim placerat risus cursus rutrum id vel massa. Proin ornare viverra odio, fringilla malesuada sapien congue at. Praesent ultrices feugiat ex, sodales tristique mauris maximus in. Curabitur finibus iaculis urna ac elementum. Ut at interdum magna.</p>
+          <div class="blog-content__quote quote">
+            <blockquote class="proj-descr__quote ">
+              In ullamcorper ac erat ac egestas. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+            </blockquote>
+            <p>John Doe<cite> - CEO ABC Group</cite></p>
+          </div>
+          <p>
+            Cras vel hendrerit nisl. In magna quam, sodales eget vestibulum accumsan, gravida ac velit. Quisque accumsan pretium orci, quis facilisis ex elementum sed. Curabitur porta scelerisque tincidunt. Nunc velit magna, condimentum in metus sed, rutrum ultricies nunc. Nulla pretium imperdiet dolor sit amet imperdiet. Maecenas accumsan fringilla lectus id tempor. Phasellus a convallis sapien. Suspendisse scelerisque, urna vitae aliquam tristique, mauris tortor blandit ex, eu efficitur ex sapien a sem. Praesent ut vehicula mauris. Proin fringilla ornare sagittis.
+          </p>
+        </div>
+        <footer class="blog-content__footer">
+          <div class="blog-content__tags">
+            <span>Tags:</span>
+            <a href="#">Art</a>
+            <a href="#">Museum</a>
+            <a href="#">Design</a>
+            <a href="#">Workshop</a>
+          </div>
+        </footer>
+      </div>
+    <section class="blog blog-related" >
+      <div class="container">
+        <h2 class="title blog-related__title">Related posts</h2>
+        <ul class="blog-list list-reset">
+          <li class="blog-list__item">
+            <article class="blog-list__post">
+                <a href="#" class="blog-list__post-link blog-list__post-link--one">
+                  <time class="blog-list__time" datetime="2022-06-23 19:00">
+                    jan 23, 2022
+                  </time>
+                  <h3 class="blog-list__title">
+                    The Lasso Is a Recycling Robot for Your Home
+                  </h3>
+                  <p class="blog-list__descr">
+                    There are many variations of passages of Lorem Ipsum ava ilable, but the majority have suffered alteration in some form...
+                  </p>
+                </a>
+            </article>
+          </li>
+          <li class="blog-list__item">
+            <article class="blog-list__post">
+              <a href="#" class="blog-list__post-link blog-list__post-link--two">
+                <time class="blog-list__time" datetime="2022-06-23 19:00">
+                  jan 23, 2022
+                </time>
+                <h3 class="blog-list__title">
+                  The Lasso Is a Recycling Robot for Your Home
+                </h3>
+                <p class="blog-list__descr">
+                  There are many variations of passages of Lorem Ipsum ava ilable, but the majority have suffered alteration in some form...
+                </p>
+              </a>
+            </article>
+          </li>
+          <li class="blog-list__item">
+            <article class="blog-list__post">
+              <a href="#" class="blog-list__post-link blog-list__post-link--three">
+                <time class="blog-list__time" datetime="2022-06-23 19:00">
+                  jan 23, 2022
+                </time>
+                <h3 class="blog-list__title">
+                  The Lasso Is a Recycling Robot for Your Home
+                </h3>
+                <p class="blog-list__descr">
+                  There are many variations of passages of Lorem Ipsum ava ilable, but the majority have suffered alteration in some form...
+                </p>
+              </a>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <article class="comments"></article>
+  </article>
+
+    </main>
+    @include('parts/footer.html')
+  </div>
+</body>
+</html>
