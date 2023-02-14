@@ -10,7 +10,7 @@
   <script defer src="js/main.js"></script>
 </head>
 <body class="page__body">
-  <article class="wrapper">
+  <div class="wrapper">
     @include('parts/header-page.html')
     <main class="main blog-page" data-descr="project">
       <h1 class="blog-title visually-hidden">Blog</h1>
@@ -112,7 +112,51 @@
         </ul>
       </div>
     </section>
-    <article class="comments"></article>
+    <article class="comments">
+      <div class="blog-content__container">
+        <h2 class="comments__title title">
+          Comments
+        </h2>
+        <ul class="comment-list list-reset">
+          <li class="comment-author comment-list__author">
+            <div class="comment-author__img">
+              <a href="" class="comment-author__img-link"><img src="./img/author-1.jpg" alt="img"></a>
+            </div>
+            <div class="comment-list__conatainer">
+              <header class="comment-author__head">
+                <a href="#" class="comment-author__title-link">
+                  <h3 class="comment-author__title">John Doe</h3>
+                </a>
+                <time datatime="2022-01-13">Jan 13, 2022</time>
+              </header>
+              <p class="comment-author__descr">
+                Everything along the way, to and from, fascinated her: every pebble, ant, stick, leaf, blade of grass, and crack in the sidewalk was something to be picked up.
+              </p>
+              <a href="#" class="comment-author__reply">Reply</a>
+            </div>
+          </li>
+          <li class="comment-author comment-list__author">
+            <div class="comment-author__img">
+              <a href="" class="comment-author__img-link"><img src="./img/author-2.jpg" alt="img"></a>
+            </div>
+            <div class="comment-list__conatainer">
+              <header class="comment-author__head">
+                <a href="" class="comment-author__title-link">
+                  <h3 class="comment-author__title">
+                    John Doe
+                  </h3>
+                </a>
+                <time datatime="2022-01-13">Jan 13, 2022</time>
+              </header>
+              <p class="comment-author__descr">
+                Everything along the way, to and from, fascinated her: every pebble, ant, stick, leaf, blade of grass, and crack in the sidewalk was something to be picked up.
+              </p>
+              <a href="#" class="comment-author__reply">Reply</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </article>
   </article>
 
     </main>

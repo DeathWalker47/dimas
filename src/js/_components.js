@@ -7,4 +7,5 @@ import './components/_fullpage';
 import './components/_popup-video';
 import './components/_tooltip';
 import './components/_page-slider';
+import './components/_footer-color';
 
