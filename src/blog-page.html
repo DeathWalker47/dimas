@@ -118,43 +118,96 @@
           Comments
         </h2>
         <ul class="comment-list list-reset">
-          <li class="comment-author comment-list__author">
-            <div class="comment-author__img">
-              <a href="" class="comment-author__img-link"><img src="./img/author-1.jpg" alt="img"></a>
-            </div>
-            <div class="comment-list__conatainer">
-              <header class="comment-author__head">
-                <a href="#" class="comment-author__title-link">
-                  <h3 class="comment-author__title">John Doe</h3>
-                </a>
-                <time datatime="2022-01-13">Jan 13, 2022</time>
-              </header>
-              <p class="comment-author__descr">
-                Everything along the way, to and from, fascinated her: every pebble, ant, stick, leaf, blade of grass, and crack in the sidewalk was something to be picked up.
-              </p>
-              <a href="#" class="comment-author__reply">Reply</a>
-            </div>
+          <li class="comment-list__item">
+            <article class="comment-author comment-list__author">
+              <div class="comment-author__img">
+                <a href="" class="comment-author__img-link"><img src="./img/author-1.jpg" alt="img"></a>
+              </div>
+              <div class="comment-list__conatainer">
+                <header class="comment-author__head">
+                  <a href="#" class="comment-author__title-link">
+                    <h3 class="comment-author__title">John Doe</h3>
+                  </a>
+                  <time datatime="2022-01-13">Jan 13, 2022</time>
+                </header>
+                <p class="comment-author__descr">
+                  Everything along the way, to and from, fascinated her: every pebble, ant, stick, leaf, blade of grass, and crack in the sidewalk was something to be picked up.
+                </p>
+                <a href="#" class="comment-author__reply-link">Reply</a>
+              </div>
+            </article>
+
+            <article class="comment-author__reply comment-author comment-list__author">
+              <div class="comment-author__img">
+                <a href="" class="comment-author__img-link"><img src="./img/author-3.jpg" alt="img"></a>
+              </div>
+              <div class="comment-list__conatainer">
+                <header class="comment-author__head">
+                  <a href="#" class="comment-author__title-link">
+                    <h3 class="comment-author__title">John Doe</h3>
+                  </a>
+                  <time datatime="2022-01-13">Jan 13, 2022</time>
+                </header>
+                <p class="comment-author__descr">
+                  Everything along the way, to and from, fascinated her: every pebble, ant, stick, leaf, blade of grass, and crack in the sidewalk was something to be picked up.
+                </p>
+                <a href="#" class="comment-author__reply-link">Reply</a>
+              </div>
+            </article>
+            <article class="comment-author__reply comment-author comment-list__author">
+              <div class="comment-author__img">
+                <a href="" class="comment-author__img-link"><img src="./img/author-4.jpg" alt="img"></a>
+              </div>
+              <div class="comment-list__conatainer">
+                <header class="comment-author__head">
+                  <a href="#" class="comment-author__title-link">
+                    <h3 class="comment-author__title">John Doe</h3>
+                  </a>
+                  <time datatime="2022-01-13">Jan 13, 2022</time>
+                </header>
+                <p class="comment-author__descr">
+                  Everything along the way, to and from, fascinated her: every pebble, ant, stick, leaf, blade of grass, and crack in the sidewalk was something to be picked up.
+                </p>
+                <a href="#" class="comment-author__reply-link">Reply</a>
+              </div>
+            </article>
+
           </li>
-          <li class="comment-author comment-list__author">
-            <div class="comment-author__img">
-              <a href="" class="comment-author__img-link"><img src="./img/author-2.jpg" alt="img"></a>
-            </div>
-            <div class="comment-list__conatainer">
-              <header class="comment-author__head">
-                <a href="" class="comment-author__title-link">
-                  <h3 class="comment-author__title">
-                    John Doe
-                  </h3>
-                </a>
-                <time datatime="2022-01-13">Jan 13, 2022</time>
-              </header>
-              <p class="comment-author__descr">
-                Everything along the way, to and from, fascinated her: every pebble, ant, stick, leaf, blade of grass, and crack in the sidewalk was something to be picked up.
-              </p>
-              <a href="#" class="comment-author__reply">Reply</a>
-            </div>
+          <li class="comment-list__item">
+            <article class="comment-author comment-list__author">
+              <div class="comment-author__img">
+                <a href="" class="comment-author__img-link"><img src="./img/author-2.jpg" alt="img"></a>
+              </div>
+              <div class="comment-list__conatainer">
+                <header class="comment-author__head">
+                  <a href="" class="comment-author__title-link">
+                    <h3 class="comment-author__title">
+                      John Doe
+                    </h3>
+                  </a>
+                  <time datatime="2022-01-13">Jan 13, 2022</time>
+                </header>
+                <p class="comment-author__descr">
+                  Everything along the way, to and from, fascinated her: every pebble, ant, stick, leaf, blade of grass, and crack in the sidewalk was something to be picked up.
+                </p>
+                <a href="#" class="comment-author__reply-link">Reply</a>
+              </div>
+            </article>
           </li>
         </ul>
+      </div>
+    </article>
+    <article class="add-comment">
+      <div class="blog-content__container">
+        <h2 class="add-comment__title">Add comment</h2>
+        <form action="#" class="contact__form form">
+          <div class="contact__form-box">
+            <input type="text" class="contact__form-input input-reset form__input" placeholder="Name">
+            <input type="email" class="contact__form-input input-reset form__input" required placeholder="Email *">
+          </div>
+          <textarea class="contact__form-textarea form__input input-reset" name="Message" required placeholder="Comment *"></textarea>
+          <button class="contact__form-btn  form__btn btn-reset" type="submit">Send request</button>
+        </form>
       </div>
     </article>
   </article>

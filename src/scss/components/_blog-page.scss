@@ -172,6 +172,8 @@
 }
 
 .comments {
+  margin-top: 96px;
+  margin-bottom: 64px;
   h2 {
     margin-bottom: 64px;
   }
@@ -184,85 +186,116 @@
     align-items:flex-start;
     margin-bottom: 32px;
   }
-  .comment-author {
-    &__container {
+}
+.comment-author {
+
+  &__img {
+    margin-right: 32px;
+    max-width: 80px;
+    width: 100%;
+    height: 80px;
+    overflow: hidden;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
     }
-    &__img {
-      margin-right: 32px;
-      max-width: 80px;
-      width: 100%;
-      height: 80px;
-      overflow: hidden;
-    }
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: all .3s ease-in-out;
+  }
 
-      &:hover {
-        transform: scale(1.1);
-      }
-    }
+  header {
+    display: flex;
+    margin-bottom: 16px;
+    font-size: 14px;
+    line-height: 18px;
+    color: $white;
+  }
 
-    header {
-      display: flex;
-      margin-bottom: 16px;
-      font-size: 14px;
-      line-height: 18px;
-      color: $white;
-    }
+  h3 {
+    @extend %outfit-600;
+    color: $white;
+    margin-bottom: 0;
+    margin-right: 16px;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    transition: color .3s ease-in-out;
 
-    h3 {
-      @extend %outfit-600;
-      color: $white;
-      margin-bottom: 0;
-      margin-right: 16px;
-      font-size: 14px;
-      line-height: 18px;
-      text-transform: uppercase;
-      transition: color .3s ease-in-out;
-
-      &:hover {
-        color: $accent;
-      }
-
+    &:hover {
+      color: $accent;
     }
 
-    time {
-      position: relative;
-      display: block;
-      @extend %outfit-400;
-      font-size: 14px;
-      line-height: 18px;
+  }
+
+  time {
+    position: relative;
+    display: block;
+    @extend %outfit-400;
+    font-size: 14px;
+    line-height: 18px;
+    color: $defautl;
+    text-transform: capitalize;
+    letter-spacing: 0;
+    margin-bottom: 0;
+
+    &::before {
+      position: absolute;
+      content: '.';
+      top: -10px;
+      left: -11px;
       color: $defautl;
-      text-transform: capitalize;
-      letter-spacing: 0;
-      margin-bottom: 0;
-
-      &::before {
-        position: absolute;
-        content: '.';
-        top: -10px;
-        left: -11px;
-        color: $defautl;
-        opacity: .3;
-        font-size: 30px;
-      }
+      opacity: .3;
+      font-size: 30px;
     }
+  }
 
-    p {
-      margin-bottom: 16px;
+  p {
+    margin-bottom: 16px;
+  }
+
+  a{
+    @extend %outfit-400;
+    transition: color .3s ease-in-out;
+    color:$accent;
+
+    &:hover {
+      color: $accent-hover;
     }
-
-    a{
-      @extend %outfit-400;
-      transition: color .3s ease-in-out;
-      color:$accent;
-
-      &:hover {
-        color: $accent-hover;
-      }
+  }
+  &__reply {
+    margin-left: 112px;
+    .comment-author__img {
+      max-width: 56px;
+      width: 100%;
+      height: 56px;
     }
+  }
+}
+
+.add-comment {
+  margin-bottom: 207px;
+  &__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: $white;
+    @extend %outfit-600;
+    margin-bottom: 64px;
+  }
+  .contact__form {
+    max-width: 100%;
+  }
+  .contact__form-box  {
+    margin-bottom: 40px;
+  }
+  .form__input {
+    margin-top: 0;
+  }
+  .contact__form-box input {
+    width: 100%;
   }
 }
