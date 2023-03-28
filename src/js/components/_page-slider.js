@@ -14,13 +14,15 @@ const swiperNav = new Swiper('.nav-swiper', {
 });
 
 const swiperHome = new Swiper('.home-swiper', {
-  speed: 1000,
+  speed: 1400,
   navigation: {
     nextEl: '.home-swiper__next',
     prevEl: '.home-swiper__prev',
   },
   mousewheel: {
     invert: false,
+    sensitivity:10,
+    thresholdDelta: 100,
   },
   slidesPerView: 1,
   direction: "vertical",
@@ -46,7 +48,8 @@ const swiperHome = new Swiper('.home-swiper', {
 
 
 const swiperPage = new Swiper('.swiper-page', {
-  speed: 1000,
+  speed: 1600,
+  parallax: true,
   navigation: {
     nextEl: '.swiper-page__next',
     prevEl: '.swiper-page__prev',

@@ -218,3 +218,8 @@ html {
       background-image: url('../img/quote.svg');
     }
 }
+
+
+.swiper-slide{
+  will-change: transform;
+}
