@@ -36,9 +36,9 @@
     "body": [
       "<nav class=\"nav\" title=\"$1\">",
       "  <ul class=\"nav__list\">",
-      "    <li class=\"nav__item\"><a href=\"#\" class=\"nav__link\"></a></li>",
-      "    <li class=\"nav__item\"><a href=\"#\" class=\"nav__link\"></a></li>",
-      "    <li class=\"nav__item\"><a href=\"#\" class=\"nav__link\"></a></li>",
+      "    <li class=\"nav__item\"><a href=\"#\" class=\"nav__link\" data-menu-item></a></li>",
+      "    <li class=\"nav__item\"><a href=\"#\" class=\"nav__link\" data-menu-item></a></li>",
+      "    <li class=\"nav__item\"><a href=\"#\" class=\"nav__link\" data-menu-item></a></li>",
       "  </ul>",
       "</nav>"
     ],
